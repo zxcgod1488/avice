@@ -12,13 +12,11 @@ body {
   padding: 16px;
 }
 
-
 .layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 
 .sidebar {
   width: 100%;
@@ -66,12 +64,10 @@ nav a.active {
   color: white;
 }
 
-
 .content {
   padding: 20px 0;
   max-width: 100%;
 }
-
 
 h1 {
   font-size: 28px;
@@ -87,6 +83,16 @@ h2 {
 p {
   color: #cbd5e1;
   margin: 10px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+p:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+  transform: scale(1.01);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
 
 .muted {
@@ -96,7 +102,6 @@ p {
 .big {
   font-size: 18px;
 }
-
 
 .card,
 .kpi,
@@ -114,7 +119,6 @@ p {
   border-radius: 18px;
   margin-bottom: 20px;
 }
-
 
 .grid {
   display: grid;
@@ -141,7 +145,6 @@ img {
   margin: 10px 0;
 }
 
-
 .tag {
   display: inline-block;
   padding: 4px 10px;
@@ -156,7 +159,6 @@ img {
   border-top: 1px solid #1f2937;
   color: #64748b;
 }
-
 
 @media (min-width: 768px) {
   body {
@@ -225,7 +227,6 @@ img {
   }
 }
 
-
 @media (min-width: 1024px) {
   body {
     padding: 32px;
@@ -261,7 +262,6 @@ img {
     max-width: 100%;
   }
 }
-
 
 @media (min-width: 1400px) {
   .content {
